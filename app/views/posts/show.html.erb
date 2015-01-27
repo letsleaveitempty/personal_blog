@@ -1,13 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @post.title %>
-</p>
+</h1>
 
 <%= @post.body.html_safe %>
 
 <br>
 
-<%= link_to 'Edit', edit_post_path(@post) if current_user %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path(@post) if current_user %>
+<br>
+<%= link_to '<- Back to the blog', posts_path, class: 'btn btn-primary'%>
+<br>
+<br>
+<br>
