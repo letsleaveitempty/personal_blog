@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root to: "posts#index"
 
   resources :posts
+
+  get '/about' => 'homepages#about_page', as: :about_page
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

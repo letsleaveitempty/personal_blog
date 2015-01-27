@@ -20,11 +20,11 @@
             -# %li
             -#   %a{:href => "#"} Work
             %li
-              %a{:href => "#"} About
+              = link_to 'Hi!', post_path(3)
             %li
               = link_to 'Blog', posts_path
             %li
-              %a{:href => "#"} Contact
+              = link_to 'About me + contact', about_page_path
             - if current_user
               %li
                 = link_to 'New Post', new_post_path if current_user
