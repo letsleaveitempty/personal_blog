@@ -2,6 +2,8 @@
 
 %h1
   = @post.title
+  .small
+    = @post.created_at.strftime("%A %m/%d/%Y")
 
 %br
 %br

@@ -2,7 +2,10 @@
   - @posts.each do |post|
     .col-md-12
       .well
-        %h1= link_to post.title, post
+        %h1
+          = link_to post.title, post
+          .small.pull-right
+            = post.created_at.strftime("%A %m/%d/%Y")
         %h3= truncate(strip_tags(post.body), length: 200)
         .pull-right
           = link_to 'Read more', post, class: 'btn btn-primary btn-lg'
