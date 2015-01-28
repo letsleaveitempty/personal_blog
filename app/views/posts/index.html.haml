@@ -7,6 +7,6 @@
         .pull-right
           = link_to 'Read more', post, class: 'btn btn-primary btn-lg'
           - if current_user
-            = link_to 'Edit', edit_post_path(post)
-            = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+            = link_to 'Edit', edit_post_path(post), class: 'btn btn-warning btn-lg'
+            = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-lg'
         .clearfix

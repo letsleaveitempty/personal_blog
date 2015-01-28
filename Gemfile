@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'rails_12factor', group: :production
 
 gem 'haml-rails'
+gem 'kramdown'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

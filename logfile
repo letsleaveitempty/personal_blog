@@ -1,0 +1,6 @@
+LOG:  database system was shut down at 2015-01-28 17:21:49 CET
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "db/development" does not exist
+FATAL:  database "db/development" does not exist
+FATAL:  database "db/personal_blog_development" does not exist

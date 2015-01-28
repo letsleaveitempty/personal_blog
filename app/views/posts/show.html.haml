@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%h1
+  = @post.title
+
+%br
+%br
+= markdown(@post.body)
+
+%br
+= link_to '<- Back to the blog', posts_path, class: 'btn btn-primary'
+= link_to 'Edit', edit_post_path(@post), class: 'btn btn-warning' if current_user
+%br
+%br
+%br
